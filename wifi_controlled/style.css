@@ -1,0 +1,28 @@
+.header h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 42px;
+	margin: 25%;
+}
+
+#heading {
+	display:inline;
+}
+
+.header {
+    background-color: #3CF; 
+	padding-top: 10px;
+}
+
+.led {
+    border-radius: 5px;
+    margin: 100px;
+    padding: 50px;
+	font-family: "Franklin Gothic Medium"; 
+	font-size: 20px;
+}
+
+.led:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}

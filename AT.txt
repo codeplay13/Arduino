@@ -1,0 +1,32 @@
+AT+CWMODE? -> shows mode
+
+AT+CDMODE=1/2/3 -> 1 to connect, 2 to create hot-spot
+
+AT+CWLAP -> shows APs in range
+
+AT+CWJAP="android", "pass"
+
+AT+CIFSR -> shows connected APs IP
+
+AT+CIPMUX=1
+
+AT+CIPSERVER=1,80 -> creating a server(1 is protocol, 80 is port)
+
+AT+CIPSEND=0,10 ->  
+
+AT+CIPCLOSE=0
+
+AT 
+
+
+twitter
+
+AT+CIPMODE=0
+
+AT+CIPMUX=1
+
+AT+CIPSTART=0,"TCP","api.thingspeak.com",80
+
+AT+CIPSEND=0,110
+
+15:19 04-07-201715:19 04-07-201715:19 04-07-2>GET /apps/thingtweet/1/statuses/update?api_key=".....&status=somethingsomething"

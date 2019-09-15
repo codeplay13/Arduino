@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ESP8266 LED CONTROL</title>
+        <link rel=stylesheet type="text/css" href="style.css">
+    </head>
+    <body>
+        
+    <div class="header">   
+            <img src="logo.png" height="20%" width="20%"/>
+            <h3 id="heading">IoT Arduino</h3>
+    </div>
+    <center>
+        <button id="11" class="led">Switch 11</button>
+        <button id="12" class="led">Switch 12</button>
+        <button id="13" class="led">Switch 13</button>
+    </center>
+    <script src = "jquery.min.js"></script>
+    <script type = "text/javascript">
+    $(document).ready(function(){
+        $(".led").click(function(){
+            var p = $(this).attr('id');
+            $.get("http://192.168.43.31:8080/", {pin:p});
+            });
+        });
+        </script>
+    </body>
+</html>
